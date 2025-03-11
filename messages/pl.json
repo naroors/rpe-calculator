@@ -1,0 +1,31 @@
+{
+  "calculator": {
+    "title": "Kalkulator RPE",
+    "description": "Oblicz swój szacowany maksymalny ciężar na jedno powtórzenie na podstawie ciężaru, powtórzeń i RPE",
+    "weight": "Ciężar (kg)",
+    "repetitions": "Powtórzenia",
+    "selectReps": "Wybierz powtórzenia",
+    "rpe": "RPE (Wskaźnik Odczuwalnego Wysiłku)",
+    "estimatedOneRepMax": "Szacowany Maksymalny Ciężar",
+    "saveToHistory": "Zapisz",
+    "liftType": "Ćwiczenie"
+  },
+  "history": {
+    "title": "Historia",
+    "date": "Data",
+    "liftType": "Ćwiczenie",
+    "weight": "Ciężar",
+    "reps": "Powt.",
+    "rpe": "RPE",
+    "oneRepMax": "1RM",
+    "actions": "Akcje",
+    "deleteEntry": "Usuń",
+    "recordsFound": "Nie znaleziono rekordów."
+  },
+  "language": "Język",
+  "filterAll": "Wszystkie",
+  "squat": "Przysiad",
+  "bench": "Ławka",
+  "deadlift": "Martwy"
+}
+

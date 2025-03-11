@@ -1,0 +1,31 @@
+{
+  "calculator": {
+    "title": "Calculateur RPE",
+    "description": "Calculez votre maximum estimé d'une répétition en fonction du poids, des répétitions et du RPE",
+    "weight": "Poids (kg/lbs)",
+    "repetitions": "Répétitions",
+    "selectReps": "Sélectionner répétitions",
+    "rpe": "RPE (Taux d'Effort Perçu)",
+    "estimatedOneRepMax": "Maximum Estimé d'Une Répétition",
+    "saveToHistory": "Enregistrer dans l'Historique",
+    "liftType": "Type de Levée"
+  },
+  "history": {
+    "title": "Historique",
+    "date": "Date",
+    "liftType": "Type de Levée",
+    "weight": "Poids",
+    "reps": "Rép.",
+    "rpe": "RPE",
+    "oneRepMax": "1RM",
+    "actions": "Actions",
+    "deleteEntry": "Supprimer l'entrée",
+    "recordsFound": "Aucun enregistrement trouvé."
+  },
+  "language": "Langue",
+  "filterAll": "Tous",
+  "squat": "Squat",
+  "bench": "Banc",
+  "deadlift": "Soulevé de terre"
+}
+

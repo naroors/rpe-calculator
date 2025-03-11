@@ -1,0 +1,30 @@
+{
+  "calculator": {
+    "title": "RPE計算機",
+    "description": "重量、回数、RPEに基づいて推定1回最大重量を計算します",
+    "weight": "重量 (kg/lbs)",
+    "repetitions": "回数",
+    "selectReps": "回数を選択",
+    "rpe": "RPE (主観的運動強度)",
+    "estimatedOneRepMax": "推定1回最大重量",
+    "saveToHistory": "履歴に保存",
+    "liftType": "リフトタイプ"
+  },
+  "history": {
+    "title": "履歴",
+    "date": "日付",
+    "liftType": "リフトタイプ",
+    "weight": "重量",
+    "reps": "回数",
+    "rpe": "RPE",
+    "oneRepMax": "1RM",
+    "actions": "アクション",
+    "deleteEntry": "エントリを削除"
+  },
+  "language": "言語",
+  "filterAll": "すべて",
+  "squat": "スクワット",
+  "bench": "ベンチ",
+  "deadlift": "デッドリフト"
+}
+

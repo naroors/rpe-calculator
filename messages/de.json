@@ -1,0 +1,31 @@
+{
+  "calculator": {
+    "title": "RPE-Rechner",
+    "description": "Berechnen Sie Ihr geschätztes Ein-Wiederholungs-Maximum basierend auf Gewicht, Wiederholungen und RPE",
+    "weight": "Gewicht (kg/lbs)",
+    "repetitions": "Wiederholungen",
+    "selectReps": "Wiederholungen auswählen",
+    "rpe": "RPE (Rate of Perceived Exertion)",
+    "estimatedOneRepMax": "Geschätztes Ein-Wiederholungs-Maximum",
+    "saveToHistory": "In Verlauf speichern",
+    "liftType": "Hebetyp"
+  },
+  "history": {
+    "title": "Verlauf",
+    "date": "Datum",
+    "liftType": "Hebetyp",
+    "weight": "Gewicht",
+    "reps": "Wdh.",
+    "rpe": "RPE",
+    "oneRepMax": "1RM",
+    "actions": "Aktionen",
+    "deleteEntry": "Eintrag löschen",
+    "recordsFound": "Keine Aufzeichnungen gefunden."
+  },
+  "language": "Sprache",
+  "filterAll": "Alle",
+  "squat": "Kniebeuge",
+  "bench": "Bankdrücken",
+  "deadlift": "Kreuzheben"
+}
+

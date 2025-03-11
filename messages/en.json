@@ -1,0 +1,31 @@
+{
+  "calculator": {
+    "title": "RPE Calculator",
+    "description": "Calculate your estimated one-rep max based on weight, reps, and RPE",
+    "weight": "Weight (kg/lbs)",
+    "repetitions": "Repetitions",
+    "selectReps": "Select reps",
+    "rpe": "RPE (Rate of Perceived Exertion)",
+    "estimatedOneRepMax": "Estimated One-Rep Max",
+    "saveToHistory": "Save to History",
+    "liftType": "Lift Type"
+  },
+  "history": {
+    "title": "History",
+    "date": "Date",
+    "liftType": "Lift Type",
+    "weight": "Weight",
+    "reps": "Reps",
+    "rpe": "RPE",
+    "oneRepMax": "1RM",
+    "actions": "Actions",
+    "deleteEntry": "Delete Entry",
+    "recordsFound": "No records found."
+  },
+  "language": "Language",
+  "filterAll": "All",
+  "squat": "Squat",
+  "bench": "Bench",
+  "deadlift": "Deadlift"
+}
+
