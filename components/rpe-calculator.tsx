@@ -64,14 +64,14 @@ export default function RPECalculator({ dictionary, lang }: RPECalculatorProps) 
     const average = (brzycki + epley + lander + lombardi + mayhew + oConner + wathan) / 7
 
     // Adjust the average based on RPE
-    const rpeAdjustment = (10 - rpe) * 0.03; // Adjusted to reflect that lower RPE is better
+    const rpeAdjustment = (10 - rpe) * 0.035; // Adjusted to reflect that lower RPE is better
     const adjustedOneRepMax = average * (1 + rpeAdjustment); // Inverted adjustment
 
     setOneRepMax(Math.round(adjustedOneRepMax * 100) / 100)
   }
 
   const saveToHistory = () => {
-    if (weight <= 0 || reps <= 0 || rpe < 6 || rpe > 10) {
+    if (weight <= 0 || reps <= 0 || rpe < 4 || rpe > 10) {
       // Optionally, you can add error handling here
       console.error("Invalid input values");
       return;
@@ -151,8 +151,14 @@ export default function RPECalculator({ dictionary, lang }: RPECalculatorProps) 
                 id="weight"
                 type="number"
                 min="1"
-                value={weight}
-                onChange={(e) => setWeight(Number(e.target.value))}
+                value={weight === 0 ? "" : weight}
+                onChange={(e) => {
+                  const value = e.target.value;
+                  const normalizedValue = value.replace(',', '.');
+                  if (normalizedValue === "" || !isNaN(Number(normalizedValue))) {
+                    setWeight(normalizedValue === "" ? 0 : Number(normalizedValue));
+                  }
+                }}
               />
             </div>
 
@@ -179,13 +185,15 @@ export default function RPECalculator({ dictionary, lang }: RPECalculatorProps) 
               </div>
               <Slider
                 id="rpe"
-                min={6}
+                min={4}
                 max={10}
                 step={0.5}
                 value={[rpe]}
                 onValueChange={(values) => setRpe(values[0])}
               />
               <div className="flex justify-between text-xs text-muted-foreground">
+                <span>4</span>
+                <span>5</span>
                 <span>6</span>
                 <span>7</span>
                 <span>8</span>
