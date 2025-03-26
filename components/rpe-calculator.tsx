@@ -100,9 +100,24 @@ export default function RPECalculator({ dictionary, lang }: RPECalculatorProps) 
 
   const formatDate = (dateString: string) => {
     try {
-      return new Date(dateString).toLocaleDateString(lang)
+      // Sprawdzenie, czy dateString jest pusty lub nie jest ciągiem
+      if (!dateString || typeof dateString !== 'string') {
+        throw new Error("Invalid date string");
+      }
+
+      const date = new Date(dateString);
+      // Sprawdzenie, czy data jest prawidłowa
+      if (isNaN(date.getTime())) {
+        throw new Error("Invalid date");
+      }
+      // Zmieniamy format na "dd.mm.yyyy"
+      const day = String(date.getDate()).padStart(2, '0');
+      const month = String(date.getMonth() + 1).padStart(2, '0'); // Miesiące są indeksowane od 0
+      const year = date.getFullYear();
+      return `${day}.${month}.${year}`;
     } catch (e) {
-      return dateString
+      console.error("Error formatting date:", e, "Input:", dateString); // Logowanie błędu i wartości wejściowej
+      return dateString; // Zwracamy oryginalny string, jeśli wystąpił błąd
     }
   }
 
@@ -169,7 +184,7 @@ export default function RPECalculator({ dictionary, lang }: RPECalculatorProps) 
                   <SelectValue placeholder={dictionary.calculator.selectReps} />
                 </SelectTrigger>
                 <SelectContent>
-                  {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((num) => (
+                  {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20].map((num) => (
                     <SelectItem key={num} value={num.toString()}>
                       {num}
                     </SelectItem>
